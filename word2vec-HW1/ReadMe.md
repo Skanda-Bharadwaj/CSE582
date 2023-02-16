@@ -11,3 +11,4 @@ The `code` repository contains all the source files that were already present in
 
 ### Results
 Screenshots of the obtained results are provided in the `results` folder for different inputs. 
+All the questions have also been answered in the code itself. 
