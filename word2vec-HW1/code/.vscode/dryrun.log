@@ -1,10 +1,18 @@
 make --dry-run --always-make --keep-going --print-directory
+<<<<<<< HEAD
 make: Entering directory `/Users/skandabharadwaj/Skanda/PennState/Courses/Spring2023/CSE582/word2vec-HW1/code'
+=======
+make: Entering directory `/Users/skandabharadwaj/Skanda/PennState/Courses/Spring2023/CSE582/HW1/word2vec/trunk'
+>>>>>>> e58500af37ab0817fc19fc12bed54017aff7dfe6
 gcc word2vec.c -o word2vec -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
 gcc word2phrase.c -o word2phrase -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
 gcc distance.c -o distance -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
 gcc word-analogy.c -o word-analogy -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
 gcc compute-accuracy.c -o compute-accuracy -lm -pthread -O3 -march=native -Wall -funroll-loops -Wno-unused-result
 chmod +x *.sh
+<<<<<<< HEAD
 make: Leaving directory `/Users/skandabharadwaj/Skanda/PennState/Courses/Spring2023/CSE582/word2vec-HW1/code'
+=======
+make: Leaving directory `/Users/skandabharadwaj/Skanda/PennState/Courses/Spring2023/CSE582/HW1/word2vec/trunk'
+>>>>>>> e58500af37ab0817fc19fc12bed54017aff7dfe6
  
