@@ -25,6 +25,7 @@ for i in `ls 1-billion-word-language-modeling-benchmark-r13output/training-monol
   normalize_text < 1-billion-word-language-modeling-benchmark-r13output/training-monolingual.tokenized.shuffled/$i >> data.txt
 done
 
+# This is the input format that is being followed to execute word2vec
 gcc word2vec.c -o word2vec -lm -pthread -O3 -march=native -funroll-loops
 ./word2vec -train data.txt -output vectors.bin -cbow 1 -size 500 -window 10 -negative 10 -hs 0 -sample 1e-5 -threads 40 -binary 1 -iter 3 -min-count 10
 ./distance vectors.bin
