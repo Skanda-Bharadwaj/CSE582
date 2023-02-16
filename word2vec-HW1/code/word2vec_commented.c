@@ -751,9 +751,16 @@ int main(int argc, char **argv) {
     printf("./word2vec -train data.txt -output vec.txt -size 200 -window 5 -sample 1e-4 -negative 5 -hs 0 -binary 0 -cbow 1 -iter 3\n\n");
     return 0;
   }
+
   output_file[0] = 0;
   save_vocab_file[0] = 0;
   read_vocab_file[0] = 0;
+
+
+  // The following can be used as arguments
+  // Size, train, mode (debug or release), learning method (cbow or Skipgram)
+  // learning rate, window size for context composition, negative sampling size
+  // number of iterations etc...
   if ((i = ArgPos((char *)"-size", argc, argv)) > 0) layer1_size = atoi(argv[i + 1]);
   if ((i = ArgPos((char *)"-train", argc, argv)) > 0) strcpy(train_file, argv[i + 1]);
   if ((i = ArgPos((char *)"-save-vocab", argc, argv)) > 0) strcpy(save_vocab_file, argv[i + 1]);
